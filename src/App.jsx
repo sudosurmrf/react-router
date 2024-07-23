@@ -4,6 +4,7 @@ import Homepage from './Homepage.jsx'
 import Red from './Red.jsx'
 import Blue from './Blue.jsx'
 import Navbar  from './navbar.jsx'
+import OtherColor from './OtherColor.jsx'
 
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/blue" element={<Blue />} />
           <Route path="/Red" element={<Red />} />
+          <Route path="/:color" element={<OtherColor />} />
         </Routes>
         <Outlet />
     </>
